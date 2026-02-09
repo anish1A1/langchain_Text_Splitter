@@ -1,3 +1,5 @@
+from langchain_text_splitters import CharacterTextSplitter
+from langchain_community.document_loaders import PyPDFLoader
 text = """
 Space exploration has led to incredible scientific discoveries.
 From landing on the Moon to exploring Mars, humanity
