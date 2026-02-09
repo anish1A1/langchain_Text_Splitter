@@ -23,3 +23,8 @@ splitter = CharacterTextSplitter(
 result = splitter.split_documents(docs)
 print(result)
 print('\n\n',result[0].page_content)
+
+
+# for texts
+result2 = splitter.split_text(text)
+print('\n',result2)
