@@ -11,3 +11,12 @@ technology here on Earth. Satellite communications, GPS, and
 even certain medical imaging techniques trace their roots back
 to innovations driven by space programs.
 """
+
+splitter = CharacterTextSplitter(
+    chunk_size = 100,
+    chunk_overlap=0,
+    separator=''
+)
+
+result = splitter.split_text(text)
+print(result)
