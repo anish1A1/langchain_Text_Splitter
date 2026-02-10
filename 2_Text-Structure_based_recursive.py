@@ -5,7 +5,7 @@ loader = PyPDFLoader('dl-curriculum.pdf')
 docs = loader.load()
 
 text_splitter = RecursiveCharacterTextSplitter(
-    chunk_size = 500,
+    chunk_size = 100,
     chunk_overlap=10,
 )
 
