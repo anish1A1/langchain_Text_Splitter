@@ -1,3 +1,5 @@
 To use text splitter add it
 pip install langchain-text-splitters
 
+Document Structure based text Splitter is also achieved with the help of RecursiveCharacterTextSplitter, we need to provide language parameter in it.
+
