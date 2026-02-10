@@ -30,9 +30,11 @@ A simple Python-based project to manage and track student data, including their 
 
 text_splitter = RecursiveCharacterTextSplitter.from_language(
     language=Language.PYTHON,
-    chunk_size = 300,
+    chunk_size = 200,
     chunk_overlap=0
 )
 
-result = text_splitter.split_text(text)
-print(result)
+chunk = text_splitter.split_text(text)
+print(chunk)
+print('\n\n', len(chunk))
+print('\n', chunk[0])
